@@ -1,0 +1,16 @@
+1. Information about Makefiles, its syntax.
+2. Different gcc flags such as 
+	`-Wall`-enables compilers all error messages,
+	`-Wextra`-enables some of the extra warnings that goes unnoticed by default `-Wall` tag,
+	`-Werror`-treats all warnings as errors,
+	`-pedantic`-issues all warnings demanded by strict ISO C & ISO C++ and rejects programs using forbidden extensions or follow ISO norms,
+	`-ggdb`-produce debug information for use by GDB,
+	`-I{path/to/dir}`-searches for header files to include in the program,
+	`-L{path/to/dir}`-location to search for shared library,
+	`-l{library/name}`-name of the library shared with the project,
+	`-g{0-3}`-gives debug information in operating system native format(you can specify levels of it by giving levels inside braces from 0-3),
+	`-O{0-3}`-optimises compilation, takes more time and memory for larger function,
+	etc.
+
+	To find more flags of the gcc compiler, search for `important gcc flags` in internet or read `gcc documentation`.
+	
