@@ -15,4 +15,13 @@
 	etc.
 
 	To find more flags of the gcc compiler, search for `important gcc flags` in internet or read `gcc documentation`.
-	
+
+3. An evil hack to use `make` keyword to run Makefile argument that is native to linux is done by making a batch file named `make.bat` and giving it the commands
+	"""
+		@ECHO OFF
+		mingw32-make $1
+	"""
+
+	which takes advantage of the fact that mingw32-make comes packed with mingw, in the same `bin` folder as that of `gcc.exe` or `g++.exe`, so the batch files runs mingw32-make with the argument given to the bat file (denoted by $1, slight digression but we can take 9 arguments in batch file with `${1-9}` being them in same order as passed) and the given files can be compiled.
+
+	Infact, you can use more than 9 input arguments in a batch file, search it in the internet for more info.	
