@@ -1,4 +1,6 @@
 1. Information about Makefiles, its syntax.
+	To find more about Makefiles, read Makefiles documentation on www.gnu.org.
+
 2. Different gcc flags such as 
 	`-Wall`-enables compilers all error messages,
 	`-Wextra`-enables some of the extra warnings that goes unnoticed by default `-Wall` tag,
